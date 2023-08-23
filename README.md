@@ -82,6 +82,10 @@ module.exports = (async () => {
 ## 4. babel.config.js
 
 ```
+npm i babel-plugin-module-resolver babel-plugin-styled-components
+```
+
+```
 module.exports = {
   presets: ['module:metro-react-native-babel-preset'],
   plugins: [
@@ -115,6 +119,11 @@ module.exports = {
 
 npm i @react-navigation/bottom-tabs @react-navigation/native @react-navigation/native-stack @types/react-native react-native-screens react-native-safe-area-context
 
+## react-native-config
+
+[github](https://github.com/luggit/react-native-config)
+npm i react-native-config
+
 ## ios 셋팅
 
 - appdelegate.mm
@@ -136,3 +145,5 @@ npm i @react-navigation/bottom-tabs @react-navigation/native @react-navigation/n
 ```
 
 ## android setting
+
+build.gradle, app/build.gradle  

@@ -28,17 +28,10 @@ import MainScreen from './src/screen/MainScreen';
 import AppInner from './AppInner';
 import {NavigationContainer} from '@react-navigation/native';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
-
-type SectionProps = PropsWithChildren<{
-  title: string;
-}>;
+import Config from 'react-native-config';
 
 function App(): JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
+  console.log('Config.SAMPLE', Config.SAMPLE);
 
   return (
     <SafeAreaProvider>

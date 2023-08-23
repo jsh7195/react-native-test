@@ -1,6 +1,8 @@
 #import "AppDelegate.h"
 
 #import <React/RCTBundleURLProvider.h>
+#import "RNCConfig.h"
+
 
 @implementation AppDelegate
 
@@ -24,3 +26,5 @@
 }
 
 @end
+
+NSDictionary *config = [RNCConfig env];

@@ -1,11 +1,18 @@
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {TestStackParamList} from '../types/navigation';
-import MainScreen from '../screen/MainScreen';
+/* eslint-disable react/no-unstable-nested-components */
+/* eslint-disable react/react-in-jsx-scope */
 import {Text} from 'react-native';
-import DetailScreen from '../screen/DetailScreen';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import HomeScreen from '../screen/HomeScreen';
+import SettingScreen from '../screen/SettingScreen';
+import TodoWrap from '../screen/todo/TodoWrap';
 
-const Tab = createBottomTabNavigator();
+type BottomParams = {
+  Home: undefined;
+  Todo: undefined;
+  Setting: undefined;
+};
+
+const Tab = createBottomTabNavigator<BottomParams>();
 
 const BottomNavi = () => {
   return (
@@ -20,11 +27,20 @@ const BottomNavi = () => {
         }}
       />
       <Tab.Screen
-        name="Main"
-        component={MainScreen}
+        name="Todo"
+        component={TodoWrap}
         options={{
           tabBarIcon: () => {
-            return <Text>Main</Text>;
+            return <Text>Todo</Text>;
+          },
+        }}
+      />
+      <Tab.Screen
+        name="Setting"
+        component={SettingScreen}
+        options={{
+          tabBarIcon: () => {
+            return <Text>Setting</Text>;
           },
         }}
       />
