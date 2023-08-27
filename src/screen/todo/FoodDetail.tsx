@@ -64,6 +64,7 @@ const FoodDetail = () => {
           $8.99
         </Text>
       </View>
+
       <View
         id="submit"
         style={{
@@ -72,6 +73,7 @@ const FoodDetail = () => {
           marginTop: 16,
           flexDirection: 'row',
           justifyContent: 'space-between',
+          alignItems :'center'
         }}>
         <View
           id="select-count-item"
