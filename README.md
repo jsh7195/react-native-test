@@ -124,7 +124,7 @@ npm i @react-navigation/bottom-tabs @react-navigation/native @react-navigation/n
 [github](https://github.com/luggit/react-native-config)
 npm i react-native-config
 
-## ios 셋팅
+## ios 셋팅 (작성중)
 
 - appdelegate.mm
 
@@ -144,6 +144,12 @@ npm i react-native-config
 
 ```
 
-## android setting
+## android setting (작성중)
 
 build.gradle, app/build.gradle  
+
+
+## android bluestack으로 실행
+
+bluestack 실행후 안드로이드 스튜디오에서 에뮬레이터를 블루스택으로 선택후 실행
+C:\Users\jsh71\AppData\Local\Android\Sdk\platform-tools 경로로 이동후에 adb connect 127.0.0.1:5555

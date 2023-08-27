@@ -4,10 +4,10 @@ import TodoList from './TodoList';
 import TodoDetail from './TodoDetail';
 import TodoModal from './TodoModal';
 
-type TodoStackParamList = {
+export type TodoStackParamList = {
   List: undefined;
   Detail: undefined;
-  Modal: undefined;
+  Modal: { userId: string};
 };
 
 const Stack = createNativeStackNavigator<TodoStackParamList>();
